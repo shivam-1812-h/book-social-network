@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Books List</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #333;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-name {
+  color: #333;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-item {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.book-cover {
+  width: 150px;
+  height: 200px;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.book-authors {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.book-description {
+  color: #666;
+}
+
+.book-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.book-action {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.book-action:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-button:hover {
+  background-color: #f2f2f2;
+}
+
+.pagination-button.active {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo">BSN</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">My books</a>
+      <a href="#">My waiting list</a>
+      <a href="#">My returned books</a>
+      <a href="#">Borrowed books</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Find a book">
+      <i class="search-icon fas fa-search"></i>
+    </div>
+    <div class="user-info">
+      <span class="user-name">Welcome Sayan</span>
+      <i class="user-icon fas fa-user"></i>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="book-list">
+    <h2 class="book-list-title">Books list</h2>
+    <div class="book-item">
+      <img class="book-cover" src="book cover.jpg" alt="Book Cover">
+      <div class="book-info">
+        <h3 class="book-title">Spring Boot in Action</h3>
+        <p class="book-authors">Craig Walls</p>
+        <p class="book-description">Spring Boot tutorial:: The ultimate Spring Boot course</p>
+        <div class="book-actions">
+          <i class="book-action fas fa-star"></i>
+          <i class="book-action fas fa-share-alt"></i>
+          <i class="book-action fas fa-heart"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pagination">
+    <button class="pagination-button">&lt;&lt;</button>
+    <button class="pagination-button">&lt;</button>
+    <button class="pagination-button active">1</button>
+    <button class="pagination-button">&gt;</button>
+    <button class="pagination-button">&gt;&gt;</button>
+  </div>
+</main>
+</body>
+</html>
